@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deepak Chauhan | Software Developer & Full-Stack AI Engineer</title>
+  <meta name="description" content="Portfolio of Deepak Chauhan - Software Developer, MCA Scholar (8.73 CGPA), AWS Certified Cloud Practitioner, Microsoft Azure AI Certified. Specializing in Next.js, React, Python, GenAI & Cloud.">
+  <meta name="keywords" content="Deepak Chauhan, Software Developer, Full-Stack Developer, Next.js, React, Gemini API, Cloud, AWS, Azure, Nashik">
+  <meta name="author" content="Deepak Chauhan">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Deepak Chauhan | Software Developer & Full-Stack AI Engineer">
+  <meta property="og:description" content="Motivated Software Developer, MCA Scholar, AWS & Azure Certified. Explore AI, Full-Stack, and Cloud projects.">
+  <meta property="og:type" content="website">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>">
+</head>
+<body>
+  <!-- Ambient Particle Canvas & Glow -->
+  <canvas id="particles-canvas"></canvas>
+  <div class="ambient-glow glow-top-left"></div>
+  <div class="ambient-glow glow-bottom-right"></div>
+
+  <!-- UPWARD CONTACTS & QUICK BAR -->
+  <div class="top-contact-bar">
+    <div class="container top-contact-inner">
+      <div class="top-contact-left">
+        <span class="status-indicator">
+          <span class="status-dot"></span> Available for Full-Time Roles & AI Projects
+        </span>
+        <span class="top-contact-item">📍 Nashik, Maharashtra, India</span>
+      </div>
+      <div class="top-contact-right">
+        <a href="mailto:deepakcchauhan07@gmail.com" class="top-contact-item" title="Send direct email">
+          📧 deepakcchauhan07@gmail.com
+        </a>
+        <a href="tel:+917721807761" class="top-contact-item" title="Call directly">
+          📞 +91 7721807761
+        </a>
+        <a href="https://github.com/dc-hub0" target="_blank" rel="noopener noreferrer" class="top-contact-item">
+          🐙 GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/deepakxchauhan/" target="_blank" rel="noopener noreferrer" class="top-contact-item">
+          💼 LinkedIn
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN NAVIGATION HEADER -->
+  <header>
+    <div class="container">
+      <nav class="main-nav">
+        <!-- Logo -->
+        <a href="index.html" class="brand-logo" aria-label="Deepak Chauhan Portfolio">
+          <div class="brand-badge">DC</div>
+          <span>Deepak Chauhan<span class="dot">.</span></span>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <ul class="nav-links">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="certifications.html">Certifications</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <!-- Navigation Actions: Search Cmd+K, Theme, Resume, Terminal -->
+        <div class="nav-actions">
+          <button class="action-btn open-cmd-palette" title="Quick Command Palette (Cmd + K)">
+            <span>⌘K</span>
+            <span class="cmd-badge">Search</span>
+          </button>
+
+          <button class="action-btn icon-only theme-toggle" title="Toggle Theme" aria-label="Toggle Theme">
+            🌙
+          </button>
+
+          <button class="action-btn open-terminal-btn" title="Open Interactive Developer Terminal">
+            💻 <span>CLI</span>
+          </button>
+
+          <button class="action-btn primary open-resume-modal" title="View Digital Resume">
+            📄 <span>Resume</span>
+          </button>
+
+          <button class="mobile-toggle" id="mobile-toggle" aria-label="Open Navigation Menu">
+            ☰
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- MOBILE NAVIGATION DRAWER -->
+  <div class="mobile-drawer" id="mobile-drawer">
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">🏠 Home</a></li>
+      <li><a href="about.html">👤 About & Education</a></li>
+      <li><a href="projects.html">⚡ Projects Showcase</a></li>
+      <li><a href="certifications.html">📜 Certifications</a></li>
+      <li><a href="contact.html">📬 Contact Deepak</a></li>
+    </ul>
+    <div class="mobile-contacts">
+      <a href="mailto:deepakcchauhan07@gmail.com" class="social-pill">📧 deepakcchauhan07@gmail.com</a>
+      <a href="tel:+917721807761" class="social-pill">📞 +91 7721807761</a>
+      <div style="display: flex; gap: 0.5rem; margin-top: 0.5rem;">
+        <a href="https://github.com/dc-hub0" target="_blank" rel="noopener noreferrer" class="social-pill" style="flex: 1;">🐙 GitHub</a>
+        <a href="https://www.linkedin.com/in/deepakxchauhan/" target="_blank" rel="noopener noreferrer" class="social-pill" style="flex: 1;">💼 LinkedIn</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN HOMEPAGE / FIRST SLIDE CONTENT -->
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section">
+      <div class="container hero-grid">
+        <!-- Hero Left Column: Info & Upward Hook -->
+        <div class="hero-content reveal">
+          <div class="hero-tag">
+            <span>✨</span> Next-Gen Software Developer & AI Builder
+          </div>
+
+          <h1 class="hero-title">
+            Hello, I'm <span class="gradient-text">Deepak Chauhan</span>
+            <span class="typing-container">
+              I build <span class="typing-text" id="typing-text">Software</span>
+            </span>
+          </h1>
+
+          <p class="hero-bio">
+            Motivated <strong>Software Developer</strong> and <strong>MCA Scholar</strong> (CGPA: <strong>8.73</strong>) with strong expertise in <strong>Java, Next.js, React, Node.js, Python, and SQL</strong>. AWS Certified Cloud Practitioner and Microsoft Azure AI Certified with hands-on experience deploying <strong>Generative AI & LLM applications</strong>, real-time WebSocket systems, and scalable cloud architectures.
+          </p>
+
+          <!-- Call to actions -->
+          <div class="hero-actions">
+            <a href="projects.html" class="btn btn-primary">
+              Explore Projects ⚡
+            </a>
+            <a href="contact.html" class="btn btn-secondary">
+              Get In Touch 📬
+            </a>
+            <button class="btn btn-outline open-resume-modal">
+              View Resume 📄
+            </button>
+            <button class="btn btn-outline open-terminal-btn">
+              CLI Mode 💻
+            </button>
+          </div>
+
+          <!-- Quick Social Links Row -->
+          <div class="social-pill-row">
+            <span style="font-size: 0.8rem; color: var(--text-muted); font-weight: 600; text-transform: uppercase;">Direct Connect:</span>
+            <a href="https://github.com/dc-hub0" target="_blank" rel="noopener noreferrer" class="social-pill">
+              🐙 GitHub: dc-hub0
+            </a>
+            <a href="https://www.linkedin.com/in/deepakxchauhan/" target="_blank" rel="noopener noreferrer" class="social-pill">
+              💼 LinkedIn: deepakxchauhan
+            </a>
+            <a href="mailto:deepakcchauhan07@gmail.com" class="social-pill">
+              ✉️ Email Me
+            </a>
+            <button class="social-pill copy-trigger" data-copy="+917721807761" title="Copy Phone Number">
+              📋 +91 7721807761
+            </button>
+          </div>
+        </div>
+
+        <!-- Hero Right Column: Interactive 3D Avatar Card -->
+        <div class="hero-visual reveal">
+          <div class="avatar-card-container">
+            <div class="avatar-card">
+              <!-- Avatar Circle with Photo and Glowing Ring -->
+              <div class="avatar-sphere">
+                <img src="assets/deepak-chauhan.jpg" alt="Deepak Chauhan" class="avatar-img" />
+                <div class="avatar-badge-live" title="Active Status">
+                  <div class="pulse"></div>
+                </div>
+              </div>
+
+              <h2 class="avatar-name">Deepak Chauhan</h2>
+              <p class="avatar-subtitle">Software Developer • Cloud & GenAI</p>
+              
+              <div style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1rem;">
+                Pursuing MCA @ R.H. Sapat College of Engineering, Nashik
+              </div>
+
+              <!-- Quick Metrics in Card -->
+              <div class="card-metrics">
+                <div class="metric-box">
+                  <div class="metric-val">8.73</div>
+                  <div class="metric-label">1st Yr MCA CGPA</div>
+                </div>
+                <div class="metric-box">
+                  <div class="metric-val">3x</div>
+                  <div class="metric-label">Cloud & AI Certs</div>
+                </div>
+                <div class="metric-box">
+                  <div class="metric-val">5+</div>
+                  <div class="metric-label">Full-Stack Apps</div>
+                </div>
+                <div class="metric-box">
+                  <div class="metric-val">50%</div>
+                  <div class="metric-label">Latency Slashed</div>
+                </div>
+              </div>
+
+              <!-- Floating orbiting badges -->
+              <div class="floating-tech-badge orbit-1">
+                <span>🤖</span> Gemini API
+              </div>
+              <div class="floating-tech-badge orbit-2">
+                <span>⚡</span> Next.js 14
+              </div>
+              <div class="floating-tech-badge orbit-3">
+                <span>☁️</span> AWS & Azure
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- KEY STATS BANNER -->
+    <div class="container reveal">
+      <div class="stats-banner">
+        <div class="stats-grid">
+          <div class="stat-item">
+            <h3>8.73</h3>
+            <p>Master's CGPA (1st Year)</p>
+          </div>
+          <div class="stat-item">
+            <h3>3x</h3>
+            <p>AWS & Microsoft Certified</p>
+          </div>
+          <div class="stat-item">
+            <h3>5+</h3>
+            <p>Production-Grade Projects</p>
+          </div>
+          <div class="stat-item">
+            <h3>15+</h3>
+            <p>Languages & Technologies</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- WHAT I DO / CORE SPECIALIZATIONS -->
+    <section>
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-badge">Core Capabilities</span>
+          <h2 class="section-title">What I Bring to the Table</h2>
+          <p class="section-desc">
+            Bridging robust backend engineering, reactive modern user interfaces, and bleeding-edge Generative AI workflows.
+          </p>
+        </div>
+
+        <div class="spec-grid">
+          <!-- Card 1: Full-Stack Web -->
+          <div class="spec-card reveal">
+            <div class="spec-icon">🌐</div>
+            <h3>Full-Stack Web Engineering</h3>
+            <p>
+              Architecting responsive, high-speed single page and server-rendered web applications utilizing Next.js, React, Node.js, and Express with clean component design.
+            </p>
+            <div class="spec-pills">
+              <span class="spec-pill">Next.js</span>
+              <span class="spec-pill">React</span>
+              <span class="spec-pill">Node.js</span>
+              <span class="spec-pill">REST APIs</span>
+              <span class="spec-pill">TypeScript</span>
+            </div>
+          </div>
+
+          <!-- Card 2: GenAI & LLMs -->
+          <div class="spec-card reveal">
+            <div class="spec-icon">🤖</div>
+            <h3>Generative AI & LLM Systems</h3>
+            <p>
+              Integrating LLM APIs like Google Gemini, Vapi AI voice assistants, role-based AI interviews, dynamic prompt chaining, and asynchronous background tasks via Inngest.
+            </p>
+            <div class="spec-pills">
+              <span class="spec-pill">Google Gemini API</span>
+              <span class="spec-pill">Vapi AI</span>
+              <span class="spec-pill">Inngest</span>
+              <span class="spec-pill">Prompt Engineering</span>
+            </div>
+          </div>
+
+          <!-- Card 3: Cloud & DevOps -->
+          <div class="spec-card reveal">
+            <div class="spec-icon">☁️</div>
+            <h3>Cloud & Architecture</h3>
+            <p>
+              AWS Certified Cloud Practitioner and Microsoft Azure AI Fundamentals certified. Deploying containerized microservices with Docker, Kubernetes, and secure cloud pipelines.
+            </p>
+            <div class="spec-pills">
+              <span class="spec-pill">AWS Certified</span>
+              <span class="spec-pill">Azure AI-900</span>
+              <span class="spec-pill">Docker</span>
+              <span class="spec-pill">Kubernetes</span>
+              <span class="spec-pill">Linux</span>
+            </div>
+          </div>
+
+          <!-- Card 4: Databases & Real-Time -->
+          <div class="spec-card reveal">
+            <div class="spec-icon">🗄️</div>
+            <h3>Databases & Real-Time Data</h3>
+            <p>
+              Designing relational and document-based data models across MongoDB, PostgreSQL, Supabase, and SQLite with WebSockets for sub-second bidirectional communications.
+            </p>
+            <div class="spec-pills">
+              <span class="spec-pill">MongoDB</span>
+              <span class="spec-pill">PostgreSQL</span>
+              <span class="spec-pill">Supabase</span>
+              <span class="spec-pill">WebSockets</span>
+              <span class="spec-pill">Prisma ORM</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED PROJECTS TEASER -->
+    <section style="background: rgba(0,0,0,0.15);">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-badge">Spotlight Work</span>
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-desc">
+            Hand-picked selections from Deepak's portfolio showcasing AI integration, full-stack systems, and low-latency architecture.
+          </p>
+        </div>
+
+        <div class="project-grid">
+          <!-- Featured 1: SAGE AI -->
+          <div class="project-card reveal">
+            <div class="project-banner">
+              <div class="project-banner-pattern"></div>
+              <div class="project-icon-badge">🤖</div>
+              <div class="project-category-tag">GenAI & Next.js</div>
+            </div>
+            <div class="project-content">
+              <h3>SAGE AI – Career Guidance Coach</h3>
+              <p>
+                Full-stack AI career acceleration platform using Next.js & Google Gemini API, incorporating role-based mock interviews, dynamic question generation, and AI resume compilation via Prisma, Clerk & Inngest.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">Next.js</span>
+                <span class="project-tag">Google Gemini API</span>
+                <span class="project-tag">Prisma</span>
+                <span class="project-tag">Clerk</span>
+                <span class="project-tag">Inngest</span>
+              </div>
+              <div class="project-footer">
+                <button class="project-link-btn open-project-modal" data-project-id="sage-ai">
+                  View Architecture & Details 🔍
+                </button>
+                <a href="https://github.com/dc-hub0" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                  GitHub ↗
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Featured 2: FitroniX -->
+          <div class="project-card reveal">
+            <div class="project-banner" style="background: linear-gradient(135deg, #064e3b 0%, #0f172a 100%);">
+              <div class="project-banner-pattern"></div>
+              <div class="project-icon-badge">🏋️</div>
+              <div class="project-category-tag">Voice & AI Fitness</div>
+            </div>
+            <div class="project-content">
+              <h3>FitroniX – AI Fitness Assistant</h3>
+              <p>
+                Next.js intelligent fitness assistant integrating Google Gemini API for personalized workout generation and Vapi AI voice assistant for hands-free interactive coaching with Clerk auth and Convex real-time data.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">Next.js</span>
+                <span class="project-tag">Google Gemini API</span>
+                <span class="project-tag">Vapi AI</span>
+                <span class="project-tag">Convex</span>
+                <span class="project-tag">Clerk</span>
+              </div>
+              <div class="project-footer">
+                <button class="project-link-btn open-project-modal" data-project-id="fitronix">
+                  View Architecture & Details 🔍
+                </button>
+                <a href="https://github.com/dc-hub0" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                  GitHub ↗
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Featured 3: Academic Insight -->
+          <div class="project-card reveal">
+            <div class="project-banner" style="background: linear-gradient(135deg, #701a75 0%, #0f172a 100%);">
+              <div class="project-banner-pattern"></div>
+              <div class="project-icon-badge">📊</div>
+              <div class="project-category-tag">Machine Learning</div>
+            </div>
+            <div class="project-content">
+              <h3>Academic Insight – Performance Predictor</h3>
+              <p>
+                Full-stack Flask & Python application with a custom K-Nearest Neighbors (KNN) classifier trained on 149 student records, predicting outcomes across 4 tiers with secure hashed user authentication and admin dashboard.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">Python</span>
+                <span class="project-tag">Flask</span>
+                <span class="project-tag">KNN Classifier</span>
+                <span class="project-tag">SQLite</span>
+                <span class="project-tag">Machine Learning</span>
+              </div>
+              <div class="project-footer">
+                <button class="project-link-btn open-project-modal" data-project-id="academic-insight">
+                  View Architecture & Details 🔍
+                </button>
+                <a href="https://github.com/dc-hub0" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                  GitHub ↗
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 3rem;" class="reveal">
+          <a href="projects.html" class="btn btn-secondary">
+            View All 5 Projects & Case Studies →
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE TERMINAL TEASER SECTION -->
+    <section>
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-badge">Interactive Terminal</span>
+          <h2 class="section-title">Developer Console</h2>
+          <p class="section-desc">
+            Prefer a CLI? Try entering commands like <code>about</code>, <code>skills</code>, <code>projects</code>, or <code>certs</code>.
+          </p>
+        </div>
+
+        <div style="max-width: 800px; margin: 0 auto;" class="reveal">
+          <div class="terminal-window">
+            <div class="terminal-top-bar">
+              <span class="terminal-circle circle-red"></span>
+              <span class="terminal-circle circle-yellow"></span>
+              <span class="terminal-circle circle-green"></span>
+              <span class="terminal-bar-title">deepak@portfolio-bash: ~ (Interactive CLI)</span>
+            </div>
+            <div class="terminal-screen" id="terminal-screen">
+              <!-- Rendered via JS -->
+            </div>
+            <div style="padding: 0 1.25rem 1rem;">
+              <div class="terminal-input-row">
+                <span class="terminal-prompt">deepak@portfolio:~$</span>
+                <input type="text" id="term-input" class="terminal-input" placeholder="type 'help', 'skills', 'about', or 'projects'..." autocomplete="off" spellcheck="false">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CALL TO ACTION BANNER -->
+    <section style="padding: 3rem 0 5rem;">
+      <div class="container reveal">
+        <div style="background: var(--bg-card); border: 1px solid var(--border-glow); border-radius: var(--radius-xl); padding: 3.5rem 2rem; text-align: center; position: relative; overflow: hidden; box-shadow: var(--shadow-glow);">
+          <div style="position: relative; z-index: 2;">
+            <span class="section-badge">Let's Connect</span>
+            <h2 style="font-family: var(--font-display); font-size: clamp(2rem, 3.5vw, 2.6rem); margin-bottom: 0.85rem;">
+              Interested in Building Together?
+            </h2>
+            <p style="color: var(--text-secondary); max-width: 580px; margin: 0 auto 2rem; font-size: 1.05rem;">
+              Whether you have an open software engineering role, need an AI-powered prototype, or want to discuss full-stack development, my inbox is open!
+            </p>
+            <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+              <a href="contact.html" class="btn btn-primary">
+                Reach Out Directly 📬
+              </a>
+              <a href="mailto:deepakcchauhan07@gmail.com" class="btn btn-secondary">
+                Email: deepakcchauhan07@gmail.com
+              </a>
+              <button class="btn btn-outline copy-trigger" data-copy="+917721807761">
+                Copy Phone: +91 7721807761
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>Deepak Chauhan<span style="color: var(--accent-secondary);">.</span></h3>
+          <p>
+            Software Developer and MCA scholar passionate about crafting scalable full-stack applications, cloud computing, and Generative AI systems.
+          </p>
+          <div style="margin-top: 1rem; display: flex; gap: 0.75rem;">
+            <a href="https://github.com/dc-hub0" target="_blank" rel="noopener noreferrer" class="social-pill">GitHub</a>
+            <a href="https://www.linkedin.com/in/deepakxchauhan/" target="_blank" rel="noopener noreferrer" class="social-pill">LinkedIn</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About & Education</a></li>
+            <li><a href="projects.html">Projects Showcase</a></li>
+            <li><a href="certifications.html">Certifications</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact Details</h4>
+          <ul class="footer-links">
+            <li><a href="mailto:deepakcchauhan07@gmail.com">📧 deepakcchauhan07@gmail.com</a></li>
+            <li><a href="tel:+917721807761">📞 +91 7721807761</a></li>
+            <li><span style="color: var(--text-muted);">📍 Nashik, Maharashtra, India</span></li>
+            <li><a href="#" class="open-resume-modal">📄 Digital Resume Preview</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          © 2026 Deepak Chauhan. All rights reserved.
+        </div>
+        <div>
+          Designed & Developed with Passion • Vanilla Web Standards
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING QUICK CLI DOCK BUTTON -->
+  <button class="terminal-dock-btn open-terminal-btn" title="Open Interactive CLI Terminal">
+    <span>💻</span> <span>CLI Terminal</span>
+  </button>
+
+  <!-- ==========================================================================
+       SHARED MODALS
+       ========================================================================== -->
+
+  <!-- 1. PROJECT ARCHITECTURE & DETAILS MODAL -->
+  <div class="modal-overlay" id="project-modal-overlay">
+    <div class="modal-window">
+      <div class="modal-header">
+        <div class="modal-title">Project Case Study & System Design</div>
+        <button class="modal-close-btn" id="project-modal-close" aria-label="Close modal">✕</button>
+      </div>
+      <div class="modal-body" id="project-modal-body">
+        <!-- Content inserted dynamically via JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. DIGITAL PRINTABLE RESUME MODAL -->
+  <div class="modal-overlay" id="resume-modal-overlay">
+    <div class="modal-window" style="max-width: 820px;">
+      <div class="modal-header">
+        <div class="modal-title">📄 Deepak Chauhan - Verified Resume</div>
+        <div style="display: flex; gap: 0.5rem; align-items: center;">
+          <button class="btn btn-primary" id="print-resume-btn" style="padding: 0.4rem 0.9rem; font-size: 0.85rem;">
+            🖨️ Print / Save PDF
+          </button>
+          <button class="modal-close-btn" id="resume-modal-close" aria-label="Close modal">✕</button>
+        </div>
+      </div>
+      <div class="modal-body" style="background: #ffffff; color: #1e293b; font-family: 'Plus Jakarta Sans', sans-serif; border-radius: 0 0 16px 16px; padding: 2rem;">
+        <!-- Clean Printable Sheet -->
+        <div style="border-bottom: 2px solid #6366f1; padding-bottom: 1.25rem; margin-bottom: 1.25rem;">
+          <h1 style="font-size: 2rem; color: #0f172a; font-weight: 800; margin-bottom: 0.25rem;">DEEPAK CHAUHAN</h1>
+          <div style="font-weight: 700; color: #4f46e5; font-size: 1rem; margin-bottom: 0.5rem;">Software Developer | Cloud & AI Practitioner</div>
+          <div style="display: flex; flex-wrap: wrap; gap: 1rem; font-size: 0.85rem; color: #475569;">
+            <span>📞 +91 7721807761</span>
+            <span>✉️ deepakcchauhan07@gmail.com</span>
+            <span>📍 Nashik, India</span>
+            <span>🐙 github.com/dc-hub0</span>
+            <span>💼 linkedin.com/in/deepakxchauhan/</span>
+          </div>
+        </div>
+
+        <!-- Summary -->
+        <div style="margin-bottom: 1.25rem;">
+          <h3 style="font-size: 1rem; text-transform: uppercase; color: #1e293b; border-bottom: 1px solid #e2e8f0; padding-bottom: 0.3rem; margin-bottom: 0.5rem;">Professional Summary</h3>
+          <p style="font-size: 0.88rem; line-height: 1.6; color: #334155;">
+            Motivated Software Developer with a Bachelor of Science in Computer Science and currently pursuing a Master of Computer Applications (MCA). AWS Certified Cloud Practitioner and Microsoft Certified: Azure AI Fundamentals (AI-900 & AI-901), with strong proficiency in Java, JavaScript, React.js, Next.js, Node.js, SQL, Python, and REST APIs. Experienced in full-stack development, backend systems, API development, cloud deployment, and workflow automation, with hands-on experience integrating LLM APIs and AI-powered solutions.
+          </p>
+        </div>
+
+        <!-- Education -->
+        <div style="margin-bottom: 1.25rem;">
+          <h3 style="font-size: 1rem; text-transform: uppercase; color: #1e293b; border-bottom: 1px solid #e2e8f0; padding-bottom: 0.3rem; margin-bottom: 0.5rem;">Education</h3>
+          <div style="margin-bottom: 0.6rem;">
+            <div style="display: flex; justify-content: space-between; font-weight: 700; font-size: 0.9rem; color: #0f172a;">
+              <span>Gokhale Education Society's R. H. Sapat College of Engineering | Nashik</span>
+              <span>2025 - 2027</span>
+            </div>
+            <div style="display: flex; justify-content: space-between; font-size: 0.85rem; color: #475569;">
+              <span>Master of Computer Application (MCA)</span>
+              <span style="font-weight: 700; color: #16a34a;">CGPA : 1st Year = 8.73</span>
+            </div>
+          </div>
+          <div style="margin-bottom: 0.6rem;">
+            <div style="display: flex; justify-content: space-between; font-weight: 700; font-size: 0.9rem; color: #0f172a;">
+              <span>K.V.N Naik College, Nashik | Nashik</span>
+              <span>2021 - 2025</span>
+            </div>
+            <div style="display: flex; justify-content: space-between; font-size: 0.85rem; color: #475569;">
+              <span>Bachelor of Science in Computer Science (B.Sc CS)</span>
+              <span style="font-weight: 700; color: #16a34a;">CGPA : 7.62</span>
+            </div>
+          </div>
+          <div>
+            <div style="display: flex; justify-content: space-between; font-weight: 700; font-size: 0.9rem; color: #0f172a;">
+              <span>G.D. Sawant Arts, Science & Commerce College | Nashik</span>
+              <span>2020 - 2021</span>
+            </div>
+            <div style="display: flex; justify-content: space-between; font-size: 0.85rem; color: #475569;">
+              <span>Higher Secondary (HSC) 12th</span>
+              <span style="font-weight: 700; color: #16a34a;">Percentage : 67.83%</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Projects -->
+        <div style="margin-bottom: 1.25rem;">
+          <h3 style="font-size: 1rem; text-transform: uppercase; color: #1e293b; border-bottom: 1px solid #e2e8f0; padding-bottom: 0.3rem; margin-bottom: 0.5rem;">Key Projects</h3>
+          <div style="margin-bottom: 0.75rem;">
+            <div style="font-weight: 700; font-size: 0.9rem; color: #0f172a;">SAGE AI – AI-Powered Career Guidance Coach | GitHub: dc-hub0</div>
+            <p style="font-size: 0.84rem; color: #334155; margin: 0.2rem 0;">
+              • Developed a full-stack AI career platform using Next.js and Google Gemini API, incorporating role-based mock interviews and real-time AI question generation.<br>
+              • Created an AI resume builder leveraging Prisma, Clerk, and Inngest to produce personalized resumes and manage AI tasks asynchronously.
+            </p>
+          </div>
+          <div style="margin-bottom: 0.75rem;">
+            <div style="font-weight: 700; font-size: 0.9rem; color: #0f172a;">FitroniX – AI-Powered Fitness Assistant | GitHub: dc-hub0</div>
+            <p style="font-size: 0.84rem; color: #334155; margin: 0.2rem 0;">
+              • Developed a full-stack fitness platform using Next.js and Gemini API for tailored recommendations.<br>
+              • Created Vapi AI voice assistant for hands-free guidance; Clerk authentication and Convex real-time database.
+            </p>
+          </div>
+          <div style="margin-bottom: 0.75rem;">
+            <div style="font-weight: 700; font-size: 0.9rem; color: #0f172a;">Academic Insight – ML Student Predictor</div>
+            <p style="font-size: 0.84rem; color: #334155; margin: 0.2rem 0;">
+              • Full-stack Flask and Python app using custom KNN classifier trained on 149 student records to forecast outcomes across 4 tiers with SQLite admin dash.
+            </p>
+          </div>
+        </div>
+
+        <!-- Skills & Certifications -->
+        <div>
+          <h3 style="font-size: 1rem; text-transform: uppercase; color: #1e293b; border-bottom: 1px solid #e2e8f0; padding-bottom: 0.3rem; margin-bottom: 0.5rem;">Skills & Certifications</h3>
+          <p style="font-size: 0.84rem; color: #334155; line-height: 1.6;">
+            <strong>Languages & Tech:</strong> Java, Python, JavaScript, TypeScript, C++, SQL, C#, React, Next.js, Node.js, Express, Flask.<br>
+            <strong>Databases & Cloud:</strong> MongoDB, PostgreSQL, Supabase, MySQL, SQLite, Docker, Kubernetes, Linux, Git.<br>
+            <strong>Certifications:</strong> AWS Certified Cloud Practitioner (2026-2029) | Microsoft Certified: Azure Fundamentals (AZ-900) | Microsoft Certified: Azure AI Fundamentals.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3. COMMAND PALETTE MODAL (Cmd + K) -->
+  <div class="modal-overlay" id="cmd-palette-overlay">
+    <div class="modal-window cmd-palette">
+      <div class="cmd-input-wrap">
+        <span style="font-size: 1.2rem;">🔍</span>
+        <input type="text" id="cmd-palette-input" placeholder="Type a command or jump to page... (e.g. 'projects', 'about', 'certs', 'theme')" autocomplete="off">
+        <span class="cmd-shortcut">ESC to close</span>
+      </div>
+      <ul class="cmd-list" id="cmd-palette-list">
+        <!-- Rendered via JS -->
+      </ul>
+    </div>
+  </div>
+
+  <!-- 4. CLI TERMINAL MODAL -->
+  <div class="modal-overlay" id="terminal-modal-overlay">
+    <div class="modal-window" style="max-width: 720px;">
+      <div class="terminal-window">
+        <div class="terminal-top-bar" style="justify-content: space-between;">
+          <div style="display: flex; align-items: center; gap: 0.5rem;">
+            <span class="terminal-circle circle-red"></span>
+            <span class="terminal-circle circle-yellow"></span>
+            <span class="terminal-circle circle-green"></span>
+            <span class="terminal-bar-title">deepak@portfolio-terminal: ~</span>
+          </div>
+          <button class="modal-close-btn" id="terminal-modal-close" style="color: #94a3b8; font-size: 1.2rem;">✕</button>
+        </div>
+        <div class="terminal-screen" style="min-height: 320px;">
+          <div class="terminal-line highlight">
+            🚀 Interactive Deepak Chauhan CLI Console.<br>
+            Type 'help' to explore commands or 'open projects' to jump.
+          </div>
+        </div>
+        <div style="padding: 0.5rem 1.25rem 1.25rem;">
+          <div class="terminal-input-row">
+            <span class="terminal-prompt">deepak@terminal:~$</span>
+            <input type="text" class="terminal-input" placeholder="try: about, skills, certs, projects, clear..." autocomplete="off">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
